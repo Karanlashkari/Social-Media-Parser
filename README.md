@@ -1,64 +1,99 @@
 Social Media Parser
-A deep learning-powered application to parse and analyze user-generated content from social media platforms like YouTube and Twitter. This tool supports sentiment classification and moderation of online content across various input formats including live tweet streams, tagged tweets, comments, plain text, and text files.
+A deep learning-powered application that parses and analyzes user-generated content from platforms like YouTube and Twitter. This system supports sentiment analysis and hate speech detection using transformer-based NLP models.
 
-🧠 Model
-Model Used: BERT (Bidirectional Encoder Representations from Transformers)
+🧠 Models Used
 
-Accuracy: 83% on test data
+BERT (base-uncased) – For general sentiment classification
 
-Purpose: Detect hate speech, toxicity, and sentiment polarity
+BERTweet – Fine-tuned for Twitter-specific language and slang
+
+DistilBERT – Lightweight alternative for faster inference
+
+Logistic Regression / SVM – Classical baselines for comparison
+
+All models were evaluated using standard metrics (accuracy, F1-score), with BERTweet achieving up to 83% accuracy on social media text classification.
+
+📊 NLP Tasks
+
+Sentiment Classification – Positive / Negative / Neutral
+
+Hate Speech Detection – Binary classification (Hate / Safe)
+
+Toxicity & Abusive Language Detection
+
+Named Entity Recognition (Optional extension)
+
+📚 Dataset
+
+TweetEval Benchmark
+
+Multi-task benchmark dataset for sentiment, hate, and offensive language detection.
+
+HateXplain
+
+Annotated dataset focused on hate speech detection with rationales.
+
+YouTube Comment Dataset (custom parsed)
 
 🔧 Features
-Parse YouTube video comments
 
-Analyze tweets by user handle or hashtags
+Parse YouTube comments using video URL
 
-Accept plain text or file-based input
+Analyze Twitter data via username or hashtag
 
-Real-time content moderation using NLP
+Accepts raw text input or text file uploads
 
-Sentiment and toxicity classification with transformer-based models
+Clean UI interface (Flask or Streamlit optional)
 
 🚀 Tech Stack
+
 Python
 
 Transformers (HuggingFace)
 
-Scikit-learn
+Tweepy – Twitter API integration
 
-Tweepy (for Twitter API)
+YouTube Data API – Comment extraction
 
-YouTube API (for comment extraction)
+Scikit-learn, Pandas, Numpy
 
-Flask / Streamlit (optional frontend support)
+Flask / Streamlit – Web Interface
 
-📂 Input Formats
-YouTube Video URL
+🧪 How to Run
 
-Twitter Username or Hashtag
-
-Raw Text
-
-.txt Files
-
-📊 Output
-Classified sentiment: Positive / Negative / Neutral
-
-Hate speech flag: Yes / No
-
-Confidence score for predictions
-
-📝 How to Run
 bash
 Copy
 Edit
+
 git clone https://github.com/Karanlashkari/Social-Media-Parser.git
 cd Social-Media-Parser
 pip install -r requirements.txt
 python app.py
-📌 Use Cases
-Content moderation for social media platforms
+📁 Input Formats
+YouTube video URL
 
-Analyzing user sentiment and engagement
+Twitter handle or hashtag
 
-Detecting toxic behavior in community discussions
+Plain text (via input box)
+
+.txt file (multi-line input)
+
+🧾 Output
+
+Classified Sentiment: Positive, Negative, Neutral
+
+Hate Speech Flag: Yes / No
+
+Confidence Scores
+
+Optional: Export report in CSV/JSON format
+
+✅ Use Cases
+
+Social media content moderation
+
+Brand reputation & sentiment analysis
+
+Analyzing online communities or campaign feedback
+
+Academic NLP research and prototyping
