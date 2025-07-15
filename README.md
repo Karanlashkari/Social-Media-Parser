@@ -59,6 +59,18 @@ Scikit-learn, Pandas, Numpy
 
 Flask / Streamlit – Web Interface
 
+Project Images:
+
+![WhatsApp Image 2025-04-19 at 11 48 24_f1adca88](https://github.com/user-attachments/assets/f11fcea5-7729-454b-8fb0-f1b259e0f337)
+
+![WhatsApp Image 2025-04-19 at 11 42 35_f93307c8](https://github.com/user-attachments/assets/b6561afc-cf21-4913-a9b8-1f86bc6c657a)
+
+![WhatsApp Image 2025-04-19 at 11 42 35_4d1379ea](https://github.com/user-attachments/assets/993b55d1-060a-4575-ab54-057cd564c446)
+
+![WhatsApp Image 2025-04-19 at 11 44 42_de8cd582](https://github.com/user-attachments/assets/92a0c389-b6af-434b-b691-fcfeca765897)
+
+![WhatsApp Image 2025-04-19 at 11 44 42_9053f5a3](https://github.com/user-attachments/assets/8bcbe61d-5a66-4df3-89e9-f61768cfb4a6)
+
 🧪 How to Run
 
 bash
